@@ -35,12 +35,12 @@ def main(trainset_path: str, artifacts_filepath: Optional[str] = None) -> float:
 
         # Read and preprocess data
         data = load_data(trainset_path)
-        X_train, X_test, y_train, y_test = preprocessing(data)
+        x_train, x_test, y_train, y_test = preprocessing(data)
 
         # Train model and make predictions
-        model = train_model(X_train, y_train)
+        model = train_model(x_train, y_train)
         mlflow.log_params(model.get_params())
-        y_predict = predict(X_test, model)
+        y_predict = predict(x_test, model)
 
         # Save the model in pickle format
         if not artifacts_filepath:

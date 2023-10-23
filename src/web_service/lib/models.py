@@ -4,11 +4,11 @@ from typing import List
 
 
 class InputData(BaseModel):
-    Sex : str
-    Length : float
-    Diameter : float
-    Height : float
-    Whole : float 
-    Shucked : float
-    Viscera : float
-    Shell : float
+    Sex: str
+    Length: float
+    Diameter: float
+    Height: float
+    Whole: float
+    Shucked: float
+    Viscera: float
+    Shell: float
