@@ -23,9 +23,7 @@
 
 ## Introduction
 This project is a part of the MLOps course at xHEC. The main goal of the project is to apply machine learning operations (MLOps) principles to a student dataset, ensuring that the model is reproducible, scalable, and maintainable.
-
 ## Setup
-
 ### Environment Setup
 To set up the environment, follow these steps:
 
@@ -45,7 +43,8 @@ conda activate xhec-mlops
 ```bash
 pip install -r requirements.txt
 ```
-# Run the app 
+
+# Run the app
 ```bash
 python main.py
 ```
@@ -54,30 +53,20 @@ The dataset used in this project is the `abalone.csv` file located in the `data`
 
 ### Exploratory Data Analysis (EDA)
 The `eda.ipynb` notebook located in the `notebooks` directory contains exploratory data analysis of the abalone dataset. This notebook provides insights into the distribution of data, relationships between different variables, and other important aspects that can help in building a machine learning model.
-
 ### Modelling
 The `modelling.ipynb` notebook located in the `notebooks` directory contains the machine learning model built for predicting the age of abalones. This notebook includes data preprocessing, model training, and evaluation steps.
-
 ### Modelling
-
 #### Preprocessing
 The `preprocessing.py` file located in the `src/modelling` directory contains functions for preprocessing the abalone dataset.
-
 #### Predicting
 The `predicting.py` file located in the `src/modelling` directory contains functions for making predictions using the trained machine learning model.
-
 #### Utilities
 The `utils.py` file located in the `src/modelling` directory contains utility functions used in the modelling process.
-
-
 ## Continuous Integration
 The project uses GitHub Actions for continuous integration. The configuration file for continuous integration is located in the `.github/workflows/ci.yaml` file.
-
 ## Assets
 The `assets` directory contains images used in the project, such as `PR_right.png` and `PR_wrong.png`.
-
 ## Contributing
 If you would like to contribute to this project, please follow the guidelines outlined in the `CONTRIBUTING.md` file (to be created).
-
 ## License
 This project is licensed under the MIT License - see the `LICENSE` file for details.
