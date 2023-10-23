@@ -1,17 +1,17 @@
-from sklearn.linear_model import LinearRegression
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
 import numpy as np
+from sklearn.compose import ColumnTransformer
+from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 
 def train_model(X, y):
     """
     Train a linear regression model on the provided data.
 
-    The function identifies numerical and categorical columns, preprocesses them using a 
-    pipeline (scaling numerical columns and one-hot encoding categorical ones), and then trains a 
+    The function identifies numerical and categorical columns, preprocesses them using a
+    pipeline (scaling numerical columns and one-hot encoding categorical ones), and then trains a
     linear regression model.
 
     Parameters:
@@ -32,7 +32,7 @@ def get_pipeline(numerical_cols, categorical_cols):
     """
     Create a pipeline for preprocessing and linear regression.
 
-    The pipeline scales numerical columns and one-hot encodes categorical columns, then applies 
+    The pipeline scales numerical columns and one-hot encodes categorical columns, then applies
     linear regression.
 
     Parameters:
@@ -45,13 +45,13 @@ def get_pipeline(numerical_cols, categorical_cols):
     numerical_transformer = StandardScaler()
     categorical_transformer = OneHotEncoder()
     preprocessor = ColumnTransformer(
-    transformers=[
-        ('num', numerical_transformer, numerical_cols),
-        ('cat', categorical_transformer, categorical_cols)
-    ])
+        transformers=[
+            ("num", numerical_transformer, numerical_cols),
+            ("cat", categorical_transformer, categorical_cols),
+        ]
+    )
     model = LinearRegression()
-    pipeline = Pipeline(steps=[('preprocessor', preprocessor),
-                           ('model', model)])
+    pipeline = Pipeline(steps=[("preprocessor", preprocessor), ("model", model)])
     return pipeline
 
 

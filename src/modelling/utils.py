@@ -1,11 +1,10 @@
 """
-This module provides functionality to save Python objects to disk using Python's pickle module. 
+This module provides functionality to save Python objects to disk using Python's pickle module.
 It's particularly useful for serializing and saving machine learning models for later use.
 """
 
-from typing import Any
-import os
 import pickle
+from typing import Any
 
 
 def save_pickle(path: str, obj: Any) -> None:
