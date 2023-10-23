@@ -112,4 +112,4 @@ The project uses GitHub Actions for continuous integration. The configuration fi
 ## Assets
 The `assets` directory contains images used in the project, such as `PR_right.png` and `PR_wrong.png`.
 ## Authors
-Dikens Celaj, Steve Moses, Amjad Rehan Ibrahim, Zofia Smolen, Kaan Caylan
+Madhura Nirale, Dikens Celaj, Steve Moses, Amjad Rehan Ibrahim, Zofia Smolen, Kaan Caylan
