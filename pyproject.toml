@@ -74,7 +74,7 @@ convention = "google"
 # https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html
 [tool.black]
 line-length = 100
-target-version = ["py310"]
+target-version = ["py39"]
 include = '\.pyi?$'
 exclude = '''
 (

@@ -1,5 +1,3 @@
-import sklearn
-
 def predict(input_data, model):
     """
     Predicts the output based on the given input data and model.
