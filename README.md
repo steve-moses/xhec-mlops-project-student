@@ -29,11 +29,6 @@ This project is a part of the MLOps course at xHEC. The main goal of the project
 ### Environment Setup
 To set up the environment, follow these steps:
 
-```bash
-# Clone the repository
-git clone https://github.com/steve-moses/xhec-mlops-project-student
-```
-
 # Navigate to the project directory
 ```bash
 cd xhec-mlops-project-student
@@ -57,23 +52,16 @@ python main.py
 ## Data
 The dataset used in this project is the `abalone.csv` file located in the `data` directory. This dataset contains information about abalones, which are a type of marine mollusk. The dataset is used to predict the age of abalones based on various physical measurements.
 
-## Notebooks
-
 ### Exploratory Data Analysis (EDA)
 The `eda.ipynb` notebook located in the `notebooks` directory contains exploratory data analysis of the abalone dataset. This notebook provides insights into the distribution of data, relationships between different variables, and other important aspects that can help in building a machine learning model.
 
 ### Modelling
 The `modelling.ipynb` notebook located in the `notebooks` directory contains the machine learning model built for predicting the age of abalones. This notebook includes data preprocessing, model training, and evaluation steps.
 
-## Source Code
-
 ### Modelling
 
 #### Preprocessing
 The `preprocessing.py` file located in the `src/modelling` directory contains functions for preprocessing the abalone dataset.
-
-#### Training
-The `training.py` file located in the `src/modelling` directory contains functions for training the machine learning model.
 
 #### Predicting
 The `predicting.py` file located in the `src/modelling` directory contains functions for making predictions using the trained machine learning model.
@@ -81,8 +69,6 @@ The `predicting.py` file located in the `src/modelling` directory contains funct
 #### Utilities
 The `utils.py` file located in the `src/modelling` directory contains utility functions used in the modelling process.
 
-### Web Service
-The `web_service` directory located in the `src` directory contains code for a web service that can be used to make predictions using the trained machine learning model.
 
 ## Continuous Integration
 The project uses GitHub Actions for continuous integration. The configuration file for continuous integration is located in the `.github/workflows/ci.yaml` file.
