@@ -46,7 +46,13 @@ pip install -r requirements.txt
 
 # Run the app
 ```bash
-python main.py
+cd src/web_service
+uvicorn main:app --reload
+```
+# Build Docker Image and Run Container
+```bash
+docker build -t <image-name:tag> -f <dockerfile-name> . 
+docker run -p <host-port>:<container-port> <image-name:tag>
 ```
 ## Data
 The dataset used in this project is the `abalone.csv` file located in the `data` directory. This dataset contains information about abalones, which are a type of marine mollusk. The dataset is used to predict the age of abalones based on various physical measurements.
