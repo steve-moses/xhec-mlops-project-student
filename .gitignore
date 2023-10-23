@@ -1,5 +1,6 @@
 #Custom
 .DS_Store
+mlruns/
 
 
 # Byte-compiled / optimized / DLL files
@@ -112,6 +113,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+myenv
 
 # Spyder project settings
 .spyderproject
