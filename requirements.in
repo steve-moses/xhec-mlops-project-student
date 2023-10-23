@@ -1,3 +1,5 @@
+# TODO - complete with requirements (pandas, sklearn etc...)
+# Then, execute "pip-compile requirements.in" to generate the file requirements.txt
 numpy==1.23.5
 pandas==1.5.1
 seaborn==0.12.1
