@@ -16,6 +16,7 @@
     - [Predicting](#predicting)
     - [Utilities](#utilities)
   - [Web Service](#web-service)
+- [Modelling with Prefect and MLflow](#prefect-mlflow)
 - [Continuous Integration](#continuous-integration)
 - [Assets](#assets)
 - [Contributing](#contributing)
@@ -68,6 +69,44 @@ The `preprocessing.py` file located in the `src/modelling` directory contains fu
 The `predicting.py` file located in the `src/modelling` directory contains functions for making predictions using the trained machine learning model.
 #### Utilities
 The `utils.py` file located in the `src/modelling` directory contains utility functions used in the modelling process.
+## Modelling with Prefect and MLflow
+The orchestration of the modelling process is handled using Prefect while tracking and logging is done via MLflow in a script named `my_prefect.py`. This script orchestrates the loading of data, preprocessing, training the model, logging metrics to MLflow, and saving the model.
+
+### Running the Modelling Script
+
+1. **Start Prefect Server**:
+    - Navigate to the `src/modelling` directory.
+    - Run:
+    
+    ```bash
+    prefect server start --host 0.0.0.0
+    
+    ```
+    
+    - Configure Prefect:
+    
+    ```bash
+    prefect config set PREFECT_API_URL=http://0.0.0.0:4200/api
+    
+    ```
+    
+2. **Start MLflow UI** (In a new terminal tab or window):
+    
+    ```bash
+    mlflow ui --host 0.0.0.0 --port 5002
+    
+    ```
+    
+3. **Execute the Flow**:
+    - With the Prefect server and MLflow UI running, execute your script:
+    
+    ```bash
+    python my_prefect.py
+    
+    ```
+    
+Visit the Prefect UI at `http://0.0.0.0:4200` and MLflow UI at `http://0.0.0.0:5002` to monitor the progress and examine the logged metrics and model.
+
 ## Continuous Integration
 The project uses GitHub Actions for continuous integration. The configuration file for continuous integration is located in the `.github/workflows/ci.yaml` file.
 ## Assets
