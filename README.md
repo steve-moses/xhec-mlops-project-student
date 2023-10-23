@@ -1,4 +1,5 @@
 # xhec-mlops-project-student
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Setup](#setup)
@@ -19,11 +20,13 @@
 - [Assets](#assets)
 - [Contributing](#contributing)
 - [License](#license)
+
 ## Introduction
 This project is a part of the MLOps course at xHEC. The main goal of the project is to apply machine learning operations (MLOps) principles to a student dataset, ensuring that the model is reproducible, scalable, and maintainable.
 ## Setup
 ### Environment Setup
 To set up the environment, follow these steps:
+
 # Navigate to the project directory
 ```bash
 cd xhec-mlops-project-student
@@ -40,12 +43,14 @@ conda activate xhec-mlops
 ```bash
 pip install -r requirements.txt
 ```
+
 # Run the app
 ```bash
 python main.py
 ```
 ## Data
 The dataset used in this project is the `abalone.csv` file located in the `data` directory. This dataset contains information about abalones, which are a type of marine mollusk. The dataset is used to predict the age of abalones based on various physical measurements.
+
 ### Exploratory Data Analysis (EDA)
 The `eda.ipynb` notebook located in the `notebooks` directory contains exploratory data analysis of the abalone dataset. This notebook provides insights into the distribution of data, relationships between different variables, and other important aspects that can help in building a machine learning model.
 ### Modelling
