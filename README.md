@@ -72,7 +72,5 @@ The `utils.py` file located in the `src/modelling` directory contains utility fu
 The project uses GitHub Actions for continuous integration. The configuration file for continuous integration is located in the `.github/workflows/ci.yaml` file.
 ## Assets
 The `assets` directory contains images used in the project, such as `PR_right.png` and `PR_wrong.png`.
-## Contributing
-If you would like to contribute to this project, please follow the guidelines outlined in the `CONTRIBUTING.md` file (to be created).
-## License
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+## Authors
+Dikens Celaj, Steve Moses, Amjad Rehan Ibrahim, Zofia Smolen, Kaan Caylan
